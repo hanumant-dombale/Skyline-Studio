@@ -15,5 +15,4 @@ Frontend: React.js, Next.js, Tailwind CSS <br>
 Backend: Node.js, Express.js <br>
 Database: MongoDB <br>
 Icons & UI: Lucide-react, ShadCN <br>
-🚀 Live Demo: [Your Website Link] <br>
-📩 Contact Us: skylinestudio0504@gmail.com
+🚀 [Live Demo](https://skylinestudio.netlify.app/)

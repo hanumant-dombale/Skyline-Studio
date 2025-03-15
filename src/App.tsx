@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import {
 	Video,
 	Camera,
@@ -36,9 +37,15 @@ function App() {
 						expert video editing and
 						marketing services
 					</p>
-					<button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition duration-300">
+					<Link
+						to="contact"
+						smooth={true}
+						duration={500}
+						offset={-100}
+						className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300"
+					>
 						Get Started
-					</button>
+					</Link>
 				</div>
 			</header>
 
@@ -135,7 +142,10 @@ function App() {
 			</section>
 
 			{/* Contact Section */}
-			<section className="bg-gray-100 py-20 px-4">
+			<section
+				id="contact"
+				className="bg-gray-100 py-20 px-4"
+			>
 				<div className="max-w-7xl mx-auto">
 					<h2 className="text-4xl font-bold text-center mb-16">
 						Contact Us

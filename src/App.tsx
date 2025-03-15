@@ -10,6 +10,7 @@ import {
 	Phone,
 	Instagram,
 } from "lucide-react";
+import ContactForm from "./components/ContactForm";
 
 function App() {
 	return (
@@ -169,26 +170,7 @@ function App() {
 								</div>
 							</div>
 						</div>
-						<form className="space-y-6">
-							<input
-								type="text"
-								placeholder="Your Name"
-								className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
-							/>
-							<input
-								type="email"
-								placeholder="Your Email"
-								className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
-							/>
-							<textarea
-								placeholder="Your Message"
-								rows={4}
-								className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
-							></textarea>
-							<button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition duration-300 w-full">
-								Send Message
-							</button>
-						</form>
+						<ContactForm />
 					</div>
 				</div>
 			</section>

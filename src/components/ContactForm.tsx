@@ -18,14 +18,14 @@ function ContactForm() {
 		e.preventDefault();
 
 		emailjs.send(
-			"service_ne96wcr",
-			"template_lx8lgoz",
+			import.meta.env.VITE_EMAILJS_SERVICE_ID,
+			import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
 			{
 				from_name: formData.from_name,
 				from_email: formData.from_email,
 				message: formData.message,
 			},
-			"CgsnEQTg_SLFd29Yp"
+			import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 		).then(
 			(response: any) => {
 				console.log("Email sent:", response);
